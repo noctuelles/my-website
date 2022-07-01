@@ -1,0 +1,98 @@
+@font-face
+{
+	font-family:	'Systema';
+	src:			url('systema.ttf');
+}
+
+@font-face
+{
+	font-family:	'8bitarcade_in';
+	src:			url('8bitarcade_in.ttf');
+}
+
+body
+{
+	margin:	0 auto;
+	width:	1000px;
+	background-color: #f4f0e8;
+	font-family:	'Systema';
+}
+
+nav
+{
+	background-color:	#EEEEEB;
+	overflow:			hidden;
+	display:			inline-block;
+}
+
+nav a
+{
+	float:				left;
+	color:				#000000;
+	padding:			14px 25px;
+	text-decoration:	none;
+	border:				1px solid black;
+	font-size:			16px;
+}
+
+nav a:hover
+{
+	background-color:	#D1D1D0;
+}
+
+.hover-img
+{
+	position:	relative;
+	overflow:	hidden;
+	width:		80px;
+	height:		80px;
+	padding:	0;
+	transition:	.3s ease-in-out;
+}
+
+.hover-img:hover
+{
+	transform:	scale(1.2);
+}
+
+#title
+{
+	overflow:		hidden;
+	border-right:	.15em solid transparent;
+	white-space:	nowrap;
+	letter-spacing:	.13em;
+	text-align:		center;
+	margin:			0 auto;
+	width:			380px;
+	font-size:		53px;
+	animation:
+		typing 2s steps(20, end),
+		blinking 1s ease-in-out 5;
+}
+
+@keyframes typing
+{
+	from
+	{
+		width: 0
+	}
+	to
+	{
+		width: 380px 
+	}
+}
+
+@keyframes blinking
+{
+	from, to { border-color:	transparent }
+	50%
+	{
+		border-color:	black;
+	}
+}
+
+footer
+{
+	text-align:	center;
+	font-size:	x-small;
+}
