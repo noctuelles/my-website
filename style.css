@@ -1,0 +1,212 @@
+@font-face
+{
+	font-family:	'Systema';
+	src:			url('systema.ttf');
+}
+
+/* House keeping */
+
+*
+{
+	padding:	0px;
+}
+
+body
+{
+	margin:				0 auto;
+	width:				1000px;
+	background-color:	#f4f0e8;
+	font-family:		'Systema';
+}
+
+/* End house keeping */
+
+/* Menu integration */
+
+nav
+{
+	width:		100%;
+	font-size:	20px;
+	position:	sticky;
+	top:		0;
+}
+
+nav > ul
+{
+	box-shadow: 1px 1px 6px 6px rgba(0,0,0,0.3);
+	display:	flex;
+	text-align:	center;
+	height:		60px;
+}
+
+nav ul
+{
+	list-style-type:	none;
+}
+
+nav > ul > li
+{
+	background-color:	#ede7db;
+	position:			relative;
+	height:				100%;
+	flex:				1;
+}
+
+nav > ul > li > a
+{
+	position:	absolute;
+	top:		50%;
+	left:		50%;
+	transform:	translate(-50%, -50%);
+}
+
+nav > ul > li:hover
+{
+	background-color:	#e0d5bf;
+}
+
+li a
+{
+	text-decoration:	none;
+	color:				black;
+}
+
+.scrolling-menu > a:after
+{
+	content:		">";
+	font-size:		15px;
+	margin-left:	9px;
+	display:		inline-block;
+}
+
+.scrolling-menu:hover > a:after
+{
+	animation-name:			rotateArrow;
+	animation-duration:		.5s;
+	animation-fill-mode:	forwards;
+}
+
+.scrolling-menu:hover > .submenu
+{
+	animation-name:			showSubmenu;
+	animation-duration:		2s;
+	animation-fill-mode:	forwards;
+}
+
+@keyframes rotateArrow
+{
+	from
+	{
+		transform:	rotate(0deg);
+	}
+	to
+	{
+		transform:	rotate(90deg);
+	}	
+}
+
+.submenu
+{
+	margin-top:		60px;
+	width:			100%;
+	text-align:		left;
+	border-radius:	2px;
+	overflow:		hidden;
+	max-height:		0;
+	background-color:	#ede7db;
+}
+
+.submenu > li > a
+{
+	height:			50px;
+	padding-left:	20px;
+	width:			100%;
+	align-items:	center;
+	display:		flex;
+}
+
+.submenu > li:hover
+{
+	background-color:	#e0d5bf;
+}
+
+@keyframes showSubmenu
+{
+	0%
+	{
+		box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+		border-top:	2px solid black;
+	}
+	100%
+	{
+		box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+		border-top:	2px solid black;
+		max-height:	50em;
+	}
+}
+
+/* end menu integration */
+
+.hover-img
+{
+	position:	relative;
+	overflow:	hidden;
+	width:		80px;
+	height:		80px;
+	padding:	0;
+	transition:	.3s ease-in-out;
+}
+
+.hover-img:hover
+{
+	transform:	scale(1.2);
+}
+
+#title
+{
+	padding-top:	20px;
+	padding-bottom:	10px;
+	overflow:		hidden;
+	border-right:	.15em solid transparent;
+	white-space:	nowrap;
+	letter-spacing:	.13em;
+	text-align:		center;
+	margin:			0 auto;
+	width:			380px;
+	font-size:		53px;
+	animation:
+		typing 2s steps(20, end),
+		blinking 1s ease-in-out 5;
+}
+
+@keyframes typing
+{
+	from
+	{
+		width: 0
+	}
+	to
+	{
+		width: 380px 
+	}
+}
+
+@keyframes blinking
+{
+	from, to { border-color:	transparent }
+	50%
+	{
+		border-color:	black;
+	}
+}
+
+footer
+{
+	text-align:	center;
+	font-size:	x-small;
+}
+
+#source-code
+{
+	float:	right;
+}

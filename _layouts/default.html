@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="style.css">
+			<title>{{ page.title }}</title>
+		</head>
+
+		<header>
+			<h1 id="title">> ./plouvel</h1>
+			{% include nav.html %}
+		</header>
+
+		<hr>
+		{{ content }}
+		<hr>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+	</body>
+</html>

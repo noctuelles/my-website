@@ -1,0 +1,20 @@
+- name: Home
+  link: /
+
+- name: My Cursus
+  scrolling_menu:
+    - At 42
+    - At CRR-DP
+  link: /my-cursus/
+
+- name:   Personnal Project
+  link:   /personnal-project
+
+- name: Articles
+  scrolling_menu:
+    - Tech
+    - Others
+  link: /articles/
+
+- name: Get in touch
+  link: /get-in-touch/
