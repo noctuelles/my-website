@@ -3,7 +3,8 @@
 	{% for item in site.data.nav %}
 		<li {% if item.scrolling_menu %}class="scrolling-menu"{% else %}class="menu"{% endif %}>
 			<a href="{{ item.link }}">{{ item.name}}</a>
-			{% if item.scrolling_menu %}<ul class="submenu">
+			{% if item.scrolling_menu %}
+			<ul class="submenu">
 				{% for submenu in item.scrolling_menu %}
 				<li><a href="{{ submenu | downcase | replace: " ", "_" | prepend: item.link }}">{{ submenu }}</a></li>
 				{% endfor %}

@@ -1,0 +1,27 @@
+---
+---
+
+@import "main";
+
+.home_head
+{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align:	center;
+}
+
+.home_head > img
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px black;
+}
+
+.home_body > h2
+{
+	border: 2px solid;
+	box-shadow: 2px 2px 2px black;
+	display: inline;
+	padding: 2px;
+}

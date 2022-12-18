@@ -1,0 +1,7 @@
+- name: C 
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+  completed: 70%
+
+- name: Docker
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+  completed: 30%
