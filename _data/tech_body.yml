@@ -2,6 +2,22 @@
   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
   completed: 70%
 
+- name: C++
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+  completed: 40%
+
+- name: Python 
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+  completed: 10%
+
+- name: Rust 
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg"
+  completed: 10%
+
 - name: Docker
   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
   completed: 30%
+
+- name: CSS
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+  completed: 10%

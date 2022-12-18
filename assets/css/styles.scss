@@ -12,8 +12,8 @@
 
 .home_head > img
 {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	box-shadow: 5px 5px 15px black;
 }
@@ -26,30 +26,45 @@
 	padding: 2px;
 }
 
-#progress
+#tech-stack
 {
-	margin-bottom: 10px;
-	margin-top: 10px;
-	margin-left:35px;
-	width: 50%;
+	text-align: center;
+}
+
+.tech-perk
+{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.tech-perk span
+{
+	position: relative;
+	bottom: 14.5px;
+}
+
+.tech-perk img
+{
+	width: 40px;
+	height: 40px;
+}
+
+.tech-perk .progress-bar
+{
+	display: inline-block;
+	position: relative;
+	bottom: 10px;
+	width: 45%;
 	height: 20px;
 	border-radius: 30px 30px 30px 30px;
+	box-shadow:		1px 1px 8px 4px rgba(0,0,0,0.3);
 	background-color: grey;
 }
 
-#imgp
+.tech-perk .progress-bar .bar
 {
-	float: left;
-	width: 30px;
-	height: 30px;
-}
-
-#bar
-{
-  width: 20%;
-  height: 20px;
-  background-color: #4d94ff;
+	height: 20px;
+	background-color: #07a6f0;
 	border-radius: 30px 30px 30px 30px;
-  line-height: 32px;
-  color: black;
+	color: black;
 }

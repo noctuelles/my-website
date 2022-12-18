@@ -13,20 +13,21 @@ stylesheet: styles.css
 	</div>
 	<hr>
 
-	<img id="imgp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" alt="docker-ico"/>
-	<div id="progress">
-		<div id="bar"></div>
-	</div>
-	<img id="imgp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" alt="docker-ico"/>
-	<div id="progress">
-		<div id="bar"></div>
-	</div>
-
-
-
 	<div class="home_body">
 		<h2>Technologies & Languages</h2>
-		<p>At 42, we first learn C and C++ through various project.</p>
+		<p>At 42, we first learn C and C++ through various project. Eager to learn more : i'm currently learning these language :</p>
+
+		<div id="tech-stack">
+			{% for item in site.data.tech_body %}
+			<div class="tech-perk">
+				<img src="{{ item.img }}" alt="{{ item.name | lowercase }}"/>
+				<div class="progress-bar">
+					<div class="bar" style="width: {{ item.completed }};"></div>
+				</div>
+				<span><b>{{ item.completed }}</b></span>
+			</div>
+			{% endfor %}
+		</div>
 
 		<h2>Projects</h2>
 		<p>glaps</p>
