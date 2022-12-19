@@ -1,21 +1,19 @@
 ---
 layout: default
 title: plouvel - Home
-stylesheet: styles.css
 ---
 
 	<div class="home_head">
 		<img src="/assets/imgs/me.jpg" alt="plouvel"/>
 		<p>
 			Hello ! I'm Paul, a student at 42 Paris, learning to become a great <i>Software Engineer</i> someday.<br>
-			On this little hand-crafted website, you can discover my skills, passions..
+			On this little website, you can discover my skills, passions..
 		</p>
 	</div>
 	<hr>
-
 	<div class="home_body">
 		<h2>Technologies & Languages</h2>
-		<p>At 42, we first learn C and C++ through various project. Eager to learn more : i'm currently learning these language :</p>
+		<p>At 42, we first learn C and C++ through various project. Eager to learn more, i'm currently learning these language :</p>
 
 		<div id="tech-stack">
 			{% for item in site.data.tech_body %}
@@ -30,5 +28,27 @@ stylesheet: styles.css
 		</div>
 
 		<h2>Projects</h2>
-		<p>glaps</p>
+
+		<p>During my cursus, i had the opportunity to work on projects dealing with numerous areas of system programming :</p>
+		<ul>
+			<li>Advanced I/O: multiplexing, sockets, files, essential knowledge for writing a Web server.</li>
+			<li>Concurrency and threads: solving the <span><a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem">philosopher problem</a></span> with mutexes and semaphores.</li>
+			<li>IPC and signals: writing a shell.</li>
+		</ul>
+		<p>But also on graphical project: such as a raytracing engine or a wireframe renderer.<br>
+		Click on an image to visit the GitHub page and learn more !</p>
+
+		<div id="projects-box">
+			{% for item in site.data.projects %}
+			<div class="box-item">
+				<a href="https://github.com/noctuelles/{{ item.github_page }}" target="_blank">
+					<img src="{{ item.img }}" alt="{{ item.name }}"/>
+				</a>
+				<div class="overlay">{{ item.description }}</div>
+			</div>
+			{% endfor %}
+		</div>
+
+		<h2>Hobby and passions</h2>
+
 	</div>

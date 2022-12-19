@@ -26,6 +26,11 @@
 	padding: 2px;
 }
 
+.home_body li 
+{
+	margin-left: 65px;
+}
+
 #tech-stack
 {
 	text-align: center;
@@ -67,4 +72,57 @@
 	background-color: #07a6f0;
 	border-radius: 30px 30px 30px 30px;
 	color: black;
+}
+
+#projects-box
+{
+	display: flex;
+	box-sizing: border-box;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#projects-box .box-item
+{
+	box-shadow:		1px 1px 8px 4px rgba(0,0,0,0.3);
+	width: 300px;
+	min-height: 200px;
+	margin: 10px;
+	border: solid black;
+	background-color: grey;
+}
+
+#projects-box .box-item img
+{
+	width: 300px;
+	min-height: 200px;
+	vertical-align: middle;
+}
+
+#projects-box .box-item:hover
+{
+	transition: all .2s ease-in-out;
+	transform: scale(1.03);
+}
+
+#projects-box .box-item .overlay
+{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#projects-box .box-item .overlay:hover
+{
+	opacity: 1;
 }

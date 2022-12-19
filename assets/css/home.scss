@@ -1,0 +1,72 @@
+---
+
+---
+@import "main";
+
+.home_head
+{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align:	center;
+}
+
+.home_head > img
+{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px black;
+}
+
+.home_body > h2
+{
+	border: 2px solid;
+	box-shadow: 2px 2px 2px black;
+	display: inline;
+	padding: 2px;
+}
+
+
+
+#tech-stack
+{
+	text-align: center;
+}
+
+.tech-perk
+{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.tech-perk span
+{
+	position: relative;
+	bottom: 14.5px;
+}
+
+.tech-perk img
+{
+	width: 40px;
+	height: 40px;
+}
+
+.tech-perk .progress-bar
+{
+	display: inline-block;
+	position: relative;
+	bottom: 10px;
+	width: 45%;
+	height: 20px;
+	border-radius: 30px 30px 30px 30px;
+	box-shadow:		1px 1px 8px 4px rgba(0,0,0,0.3);
+	background-color: grey;
+}
+
+.tech-perk .progress-bar .bar
+{
+	height: 20px;
+	background-color: #07a6f0;
+	border-radius: 30px 30px 30px 30px;
+	color: black;
+}

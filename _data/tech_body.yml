@@ -21,3 +21,7 @@
 - name: CSS
   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
   completed: 10%
+
+- name: Javascript
+  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  completed: 10%
